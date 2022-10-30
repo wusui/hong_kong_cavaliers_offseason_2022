@@ -2,15 +2,17 @@
 
 Offseason calculations for the Hong Kong Cavaliers
 
-# Part 1.
+# Notice
 
-get_data is a package used to extract the cbssportsline.com stats into a json file.
+get_data has been deprecated.
 
-To create a json file containing all the stats we are interested in, do the following:
-'''
-cd get_data
-python
-from get_raw_data import get_json_data
-quit()
-'''
+# Layout
+
+cbs -- directory for cbs sportsline statistics
+bref -- directory for baseball reference statistics
+common -- common code
+
+# Execution
+cbs.get_players creates a file named cbs.stats.json
+bref.get_players creates a file named bref.stats.json
 
